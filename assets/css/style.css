@@ -1,0 +1,65 @@
+* {
+    border: solid red 1px;
+}
+
+/* nav bar */
+#mainNav {
+    border-color: rgba(34, 34, 34, 0.05);
+    /* nav bar from bootstrap has a colour already */
+    background-color: brown !important;
+    transition: all 0.35s;
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    padding-left: 100px;
+    margin-left: 0;
+    font-weight: 900;
+}
+
+/* nav bar buttons to the right */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+
+/* each element within the nav bar buttons */
+#mainNav .navbar-nav .nav-link {
+    margin-right: 15px; 
+}
+
+/* button styling */
+.btn-border {
+    border-radius: 20px;
+    background-color: rgb(250, 209, 209);
+    box-shadow: 12px 12px 2px 1px red;
+}
+
+/* hover */
+#mainNav a:hover,
+#mainNav a:focus:hover {
+    color: purple;
+    font-weight: bold;
+}
+
+/* jumbotron/hero */
+/* .hero-content .image-container {
+    max-width: 100px;
+    max-height: calc(100vh - 25px);
+}
+
+.hero-content {
+    width: 1919.536px;
+    height: 1080px;
+    flex-shrink: 0;
+}
+
+.hero-content2 {
+    width: 70%;
+    min-width: 500px;
+    max-width: 700px;
+    color: white;
+    text-align: center;
+} */
