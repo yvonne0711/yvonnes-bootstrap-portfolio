@@ -13,6 +13,7 @@
     letter-spacing: 1px;
 }
 
+/* styling of name */
 .navbar-brand {
     padding-left: 100px;
     margin-left: 0;
@@ -52,11 +53,11 @@
     background-repeat: no-repeat;
     height: calc(100vh - 25px);
     display: flex;
-    /* place container to be bottom right of the screen */
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
 }
 
+/* all the content within the container */
 .hero-content {
     width: 100%;
     min-width: 500px;
@@ -66,17 +67,49 @@
     text-align: right;
 }
 
-/* Additional styles for image responsiveness */
+/* image needed to be in a separate element */
 .image-container {
     max-width: 100%;
     max-height: 100%;
-    overflow: hidden;
 }
 
+/* image positioning */
 .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    /* size of image */
+    width: 400px;
+    /* the image will automatically adjust its height to allow its content to be displayed correctly within the img-fluid container */
+    height: auto;
+    /* scaled to maintain its aspect ratio while fitting within the element's content box */
+    object-fit: contain; 
+    /* Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width */
     display: block;
+    /* Specifying auto determines the left and right margins by setting them equally.  0 determines that the top and bottom margins will both be set to 0 */
     margin: 0 auto; 
+    border-radius: 100px;
+}
+
+/* text in hero banner */
+/* .heroSubtitle {
+    width: 41%;
+    max-width: 600px;
+    margin-left: auto; 
+} */
+
+/* making text container smaller for hover effect only on the text */
+/* .heroSubtitle p {
+    width: 50%;
+    margin-left: auto;
+} */
+
+/* hover effects for the text only within the hero banner */
+.heroSubtitle h1 span:hover,
+.heroSubtitle h1 span:focus:hover {
+    color: purple;
+    font-weight: bold;
+}
+
+.heroSubtitle p span:hover,
+.heroSubtitle p span:focus:hover {
+    color: purple;
+    font-weight: bold;
 }
