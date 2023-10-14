@@ -18,6 +18,7 @@
     padding-left: 100px;
     margin-left: 0;
     font-weight: 900;
+    color: brown;
 }
 
 /* nav bar buttons to the right */
@@ -29,6 +30,7 @@
 /* each element within the nav bar buttons */
 #mainNav .navbar-nav .nav-link {
     margin-right: 15px; 
+    color: brown;
 }
 
 /* button styling */
@@ -41,8 +43,8 @@
 /* hover */
 #mainNav a:hover,
 #mainNav a:focus:hover {
-    color: purple;
-    font-weight: bold;
+    color: purple !important;
+    font-weight: 900;
 }
 
 /* jumbotron/hero */
@@ -112,4 +114,36 @@
 .heroSubtitle p span:focus:hover {
     color: purple;
     font-weight: bold;
+}
+
+/* footer */
+footer {
+    padding: 25px 0;
+    text-align: center;
+    background-color: rgb(250, 209, 209);
+    color: brown;
+}
+
+/* the group of buttons */
+.footer-btns {
+    margin: 30px;
+}
+
+/* spacing between the buttons themselves */
+.footer-btns a {
+    margin: 0px 50px;
+}
+
+/* styling of button */
+.btn-contact {
+    color: brown;
+    border-color: brown;
+    box-shadow: 12px 12px 2px 1px red;
+}
+
+.footer-btns a:hover,
+.footer-btns a:focus:hover {
+    color: white;
+    background-color: purple;
+    border-color: rgb(70, 7, 70);
 }
