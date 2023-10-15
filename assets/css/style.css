@@ -1,5 +1,5 @@
 * {
-    border: solid red 1px;
+    border: solid red 2px;
 }
 
 /* nav bar */
@@ -7,10 +7,10 @@
     border-color: rgba(34, 34, 34, 0.05);
     /* nav bar from bootstrap has a colour already */
     background-color: brown !important;
-    transition: all 0.35s;
     font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 200;
     letter-spacing: 1px;
+    height: 80px;
 }
 
 /* styling of name */
@@ -52,7 +52,7 @@
     background-image: url(../images/pixel-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh - 25px);
+    height: calc(100vh);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,23 +105,64 @@
 /* each section */
 section.main-content {
     position: relative;
-    padding: 150px 0;
+    padding: 100px 0;
     margin: 0;
 }
 
+/* each section's styling */
 section.main-content h2 {
     font-size: 50px;
     margin-top: 0;
 }
 
+/* text font size */
 .content-section p {
     font-size: 18px;
 }
 
-
-/* about me  */
+/* all sections */
 #about, #projects, #skills {
     color: brown;
+}
+
+/* projects section */
+/* all cards styling */
+.card-content {
+    display: flex;
+    justify-content: center;
+}
+
+.card-content h5 {
+    color: brown;
+    font-weight: 700;
+}
+
+.card-content p {
+    color: brown;
+}
+
+/* card buttons */
+.card-content a {
+    border-radius: 20px;
+    background-color: brown;
+    border-color: brown;
+    box-shadow: 12px 12px 2px 1px red;
+    color: rgb(250, 209, 209);
+}
+
+.card-content a:hover,
+.card-content a:focus:hover {
+    color: white;
+    background-color: purple;
+    border-color: rgb(70, 7, 70);
+}
+
+/* card images */
+.card-content .card-img {
+    /* making sure all images are the same size */
+    height: 300px; 
+    /* keeps the aspect ratio ie no shrinking or squishing whilst keeping the image inside the container */
+    object-fit: cover;
 }
 
 /* skills section */
@@ -129,21 +170,6 @@ section.main-content h2 {
     margin-left: 20px;
     text-align: left;
 }
-
-/* .title-section {
-    border-right: solid 5px blue;
-} */
-
-
-
-  /* section.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-  } */
-
-
 
 /* footer/contact me section */
 footer {
