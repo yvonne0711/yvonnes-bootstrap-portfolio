@@ -48,7 +48,6 @@
 }
 
 /* jumbotron/hero */
-
 .hero-container {
     background-image: url(../images/pixel-bg.jpg);
     background-size: cover;
@@ -90,19 +89,6 @@
     border-radius: 100px;
 }
 
-/* text in hero banner */
-/* .heroSubtitle {
-    width: 41%;
-    max-width: 600px;
-    margin-left: auto; 
-} */
-
-/* making text container smaller for hover effect only on the text */
-/* .heroSubtitle p {
-    width: 50%;
-    margin-left: auto;
-} */
-
 /* hover effects for the text only within the hero banner */
 .heroSubtitle h1 span:hover,
 .heroSubtitle h1 span:focus:hover {
@@ -116,7 +102,55 @@
     font-weight: bold;
 }
 
-/* footer */
+/* each section */
+section.main-content {
+    position: relative;
+    padding: 150px 0;
+    margin: 0;
+}
+
+section.main-content h2 {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.content-section p {
+    font-size: 18px;
+}
+
+
+/* about me  */
+#about, #projects, #skills {
+    color: brown;
+}
+
+/* .title-section {
+    border-right: solid 5px blue;
+} */
+
+
+
+  /* section.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  } */
+
+  
+  section.download .badges .badge-link {
+    margin-bottom: 25px;
+  }
+  
+  section.download .badges .badge-link:last-child {
+    margin-bottom: 0;
+  }
+  
+  section.download .badges .badge-link img {
+    height: 60px;
+  }
+
+/* footer/contact me section */
 footer {
     padding: 25px 0;
     text-align: center;
@@ -141,6 +175,7 @@ footer {
     box-shadow: 12px 12px 2px 1px red;
 }
 
+/* footer button hover styling */
 .footer-btns a:hover,
 .footer-btns a:focus:hover {
     color: white;
