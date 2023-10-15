@@ -124,6 +124,12 @@ section.main-content h2 {
     color: brown;
 }
 
+/* skills section */
+.content-section .text-left {
+    margin-left: 20px;
+    text-align: left;
+}
+
 /* .title-section {
     border-right: solid 5px blue;
 } */
@@ -137,18 +143,7 @@ section.main-content h2 {
     justify-content: flex-end;
   } */
 
-  
-  section.download .badges .badge-link {
-    margin-bottom: 25px;
-  }
-  
-  section.download .badges .badge-link:last-child {
-    margin-bottom: 0;
-  }
-  
-  section.download .badges .badge-link img {
-    height: 60px;
-  }
+
 
 /* footer/contact me section */
 footer {
